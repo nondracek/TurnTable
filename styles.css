@@ -1,0 +1,56 @@
+.turntable {
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+.turntable .item-grid {
+  height: 90%;
+  width: 90%;
+  padding: 5% 5% 5% 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+}
+.turntable .item-grid .item-transform {
+  transition: color 1s ease;
+}
+.turntable .item-grid .item-transform:hover {
+  color: black;
+}
+.turntable .item-grid .item {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.turntable .item-grid .item i {
+  padding-top: 18px;
+  font-size: 48px;
+}
+.turntable .item-grid .item.one {
+  background: #4287f5;
+  grid-column: 2;
+  grid-row: 1;
+}
+.turntable .item-grid .item.two {
+  background: #42f56c;
+  grid-column: 3;
+  grid-row: 2;
+}
+.turntable .item-grid .item.three {
+  background: #a742f5;
+  grid-column: 2;
+  grid-row: 3;
+}
+.turntable .item-grid .item.four {
+  background: #f54254;
+  grid-column: 1;
+  grid-row: 2;
+}
